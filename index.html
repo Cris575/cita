@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cancelación de Citas - INE</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cancelación de Citas</h1>
+  </header>
+  
+  <div id="login-form">
+    <h2>Iniciar sesión</h2>
+    <input type="text" placeholder="Número de Credencial de Elector" id="ine-number">
+    <input type="password" placeholder="Contraseña" id="password">
+    <button onclick="login()">Iniciar sesión</button>
+    <a href="#">¿Olvidaste tu contraseña?</a>
+  </div>
+  
+  <div id="user-panel" style="display: none;">
+    <h2>Bienvenido, <span id="user-name"></span></h2>
+    <h3>Tus citas programadas:</h3>
+    <ul id="appointment-list"></ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
